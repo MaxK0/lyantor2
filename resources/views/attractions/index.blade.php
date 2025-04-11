@@ -79,7 +79,7 @@
                                     <summary class="details__summary">Подробнее</summary>
                                     <div class="details__content information">
                                         @if($attraction->short_description)
-                                            {{ $attraction->short_description }}
+                                            {!! nl2br(e($attraction->short_description)) !!}
                                         @else
                                             Описание отсутствует
                                         @endif

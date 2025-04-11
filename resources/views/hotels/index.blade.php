@@ -89,7 +89,7 @@
                                     <summary class="details__summary">Подробнее</summary>
                                     <div class="details__content information">
                                         @if($hotel->short_description)
-                                            {{ $hotel->short_description }}
+                                            {!! nl2br(e($hotel->short_description)) !!}
                                         @else
                                             Описание отсутствует
                                         @endif

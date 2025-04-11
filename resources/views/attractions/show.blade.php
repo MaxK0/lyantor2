@@ -57,7 +57,13 @@
                     <!-- Описание -->
                     <div class="description">
                         <h3>Описание:</h3>
-                        <p class="information">{{ nl2br(e($attraction->description)) ?? 'Описание отсутствует' }}</p>
+                        @if($attraction->description)
+                            <div class="description-content">
+                                {!! nl2br(e($attraction->description)) !!}
+                            </div>
+                        @else
+                            <p class="no-description">Описание отсутствует</p>
+                        @endif
                     </div>
 
                     <!-- Рейтинг -->

@@ -58,7 +58,13 @@
                     <!-- Описание -->
                     <div class="description">
                         <h3>Описание:</h3>
-                        <p class="information">{{ nl2br(e($hotel->description)) ?? 'Описание отсутствует' }}</p>
+                        @if($hotel->description)
+                            <div class="description-content">
+                                {!! nl2br(e($hotel->description)) !!}
+                            </div>
+                        @else
+                            <p class="no-description">Описание отсутствует</p>
+                        @endif
                     </div>
 
                     <div class="hotel-contacts">
