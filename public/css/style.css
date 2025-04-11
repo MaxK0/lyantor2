@@ -178,8 +178,9 @@ section {
 }
 
 .information {
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    white-space: pre-wrap; /* Сохраняет пробелы и переносы */
+    word-wrap: break-word; /* Переносит длинные слова */
+}
 
 .section {
     padding: 4rem 0;
@@ -633,6 +634,9 @@ form h1 {
     .title__section {
         background-position-x: -20rem;
     }
+    .filter-form .form__blocks {
+        flex-direction: column;
+    }
     .header__menu {
         display: block;
         width: 2.5rem;
@@ -658,10 +662,6 @@ form h1 {
     .header__ul.open {
         display: flex;
         opacity: 1;
-    }
-
-    .filter-form {
-        flex-direction: column;
     }
 }
 
