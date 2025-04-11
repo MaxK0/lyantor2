@@ -659,6 +659,10 @@ form h1 {
         display: flex;
         opacity: 1;
     }
+
+    .filter-form {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
