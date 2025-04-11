@@ -177,6 +177,10 @@ section {
     margin-bottom: 2rem;
 }
 
+.information {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
 .section {
     padding: 4rem 0;
     border-bottom: 1px solid rgba(232, 213, 209, 0.2);

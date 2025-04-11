@@ -77,7 +77,7 @@
 
                                 <details class="details">
                                     <summary class="details__summary">Подробнее</summary>
-                                    <div class="details__content">
+                                    <div class="details__content information">
                                         @if($attraction->short_description)
                                             {{ $attraction->short_description }}
                                         @else

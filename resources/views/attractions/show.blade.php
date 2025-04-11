@@ -57,7 +57,7 @@
                     <!-- Описание -->
                     <div class="description">
                         <h3>Описание:</h3>
-                        <p>{{ $attraction->description ?? 'Описание отсутствует' }}</p>
+                        <p class="information">{{ $attraction->description ?? 'Описание отсутствует' }}</p>
                     </div>
 
                     <!-- Рейтинг -->

@@ -58,7 +58,7 @@
                     <!-- Описание -->
                     <div class="description">
                         <h3>Описание:</h3>
-                        <p>{{ $hotel->description ?? 'Описание отсутствует' }}</p>
+                        <p class="information">{{ $hotel->description ?? 'Описание отсутствует' }}</p>
                     </div>
 
                     <div class="hotel-contacts">
